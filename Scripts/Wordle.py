@@ -2,7 +2,7 @@
 import random, os
 
 def generateAnswers():
-    with open('/home/mschiff/Archives/personalProjects/completedProjects/Wordle/wordle-answers-alphabetical.txt') as words:
+    with open('wordle-answers-alphabetical.txt', 'r') as words:
         words = words.read()
         words = words.split('\n')
         newWords = []
@@ -12,10 +12,10 @@ def generateAnswers():
         return newWords
 
 def generateGuesses():
-    with open('/home/mschiff/Archives/personalProjects/completedProjects/Wordle/wordle-answers-alphabetical.txt') as words:
+    with open('wordle-answers-alphabetical.txt', 'r') as words:
         words = words.read()
         answers = words.split('\n')
-        with open('/home/mschiff/Archives/personalProjects/completedProjects/Wordle/wordle-allowed-guesses.txt') as words:
+        with open('wordle-allowed-guesses.txt', 'r') as words:
             words = words.read()
             words = words.split('\n')
             words = words + answers 
@@ -26,7 +26,7 @@ def generateGuesses():
             return newWords
             
 def generateWrong():
-    with open('/home/mschiff/Archives/personalProjects/completedProjects/Wordle/wordle-answers-alphabetical.txt') as words:
+    with open('wordle-answers-alphabetical.txt', 'r') as words:
         words = words.read()
         answers = words.split('\n')
         newWords = []

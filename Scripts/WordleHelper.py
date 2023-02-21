@@ -1,5 +1,5 @@
 import WordleSolver as WS
-import WordleRefactored as WR
+import Wordle as WR
 import WordSelector as Word
 
 gameName = """ .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------. 

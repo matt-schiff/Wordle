@@ -1,5 +1,5 @@
 import sys, os, random, time
-import WordleRefactored as WR
+import Wordle as WR
 import WordSelector as WS
 
 def preprocessList(answerKey):

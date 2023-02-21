@@ -1,5 +1,5 @@
 import random
-import WordleRefactored as WR
+import Wordle as WR
 import WordleSolver as WS
 
 
